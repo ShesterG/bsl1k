@@ -229,7 +229,7 @@ class InceptionI3d(nn.Module):
         in_channels=3,
         dropout_keep_prob=0.5,
         num_in_frames=64,
-        include_embds=False,
+        include_embds=True,
     ):
         """Initializes I3D model instance.
         Args:

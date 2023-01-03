@@ -304,12 +304,15 @@ def main(
         )
     # Prepare: resize/crop/normalize
     rgb_input = prepare_input(rgb_orig)
+    print(rgb_input.size())
     # Sliding window
     rgb_slides, t_mid = sliding_windows(
         rgb=rgb_input,
         stride=stride,
         num_in_frames=num_in_frames,
     )
+    print(rgb_slides.shape)
+    print(t_mid.shape)
     # Number of windows/clips
     num_clips = rgb_slides.shape[0]
     # Group the clips into batches
@@ -319,6 +322,7 @@ def main(
         inp = rgb_slides[b * batch_size : (b + 1) * batch_size]
         # Forward pass
         out = model(inp)
+        print(out['embds'].size())
         raw_scores = np.append(raw_scores, out["logits"].cpu().detach().numpy(), axis=0)
     prob_scores = scipy.special.softmax(raw_scores, axis=1)
     prob_sorted = np.sort(prob_scores, axis=1)[:, ::-1]
@@ -347,7 +351,9 @@ def main(
             gt_text=gt_text,
         )
         # Make a video from the visualization images
-        ffmpeg_str = (f"ffmpeg -y -i {frame_dir}/frame_%03d.png -c:v libx264 "
+        # ffmpeg_str = (f"ffmpeg -y -i {frame_dir}/frame_%03d.png -c:v libx264 "
+        #               f"-pix_fmt yuv420p -filter:v fps=fps=25 {save_path}")
+        ffmpeg_str = (f"ffmpeg -y -i {frame_dir}/frame_%03d.png "
                       f"-pix_fmt yuv420p -filter:v fps=fps=25 {save_path}")
         os.system(ffmpeg_str)
         # Remove the visualization images
@@ -391,7 +397,7 @@ if __name__ == "__main__":
     p.add_argument(
         "--video_url",
         type=str,
-        default="https://www.handspeak.com/word/b/book.mp4",
+        default="https://www.handspeak.com/word/b/boo/book.mp4",
         help=("Location on the web of an isolated ASL sign (the default is a video from"
               "WLASL test set)"),
     )

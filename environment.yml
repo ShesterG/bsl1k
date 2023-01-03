@@ -1,7 +1,7 @@
-name: bsl1k_env
+name: bsl1k
 
 dependencies:
+  - python=3.6
   - pip
   - opencv
-  - python
   - pytorch=1.4

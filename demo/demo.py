@@ -342,7 +342,8 @@ def main(
         frame_dir.mkdir(exist_ok=True, parents=True)
         # Save visualization images
         viz_predictions(
-            rgb=rgb_orig,
+            # rgb=rgb_orig,
+            rgb=rgb_input,
             word_topk=word_topk,
             prob_topk=prob_topk,
             t_mid=t_mid,

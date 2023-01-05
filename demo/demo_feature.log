@@ -1,0 +1,965 @@
+Loading model... took 00h00m04s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-13.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h01m00s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-13.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-13.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-13.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-13.mp4 with 9220 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 9220, 224, 224])
+2302 clips resulted from sliding window processing.
+torch.Size([2302, 3, 16, 224, 224])
+(2302, 1024)
+ took 00h00m52s
+(12299, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2020-03-13.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-23.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m55s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-23.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-23.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-23.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-23.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-23.mp4 with 336 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 336, 224, 224])
+81 clips resulted from sliding window processing.
+torch.Size([81, 3, 16, 224, 224])
+(81, 1024)
+ took 00h00m02s
+(12578, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2020-03-23.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-24.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m55s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-24.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-24.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-24.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-24.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-24.mp4 with 2667 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 2667, 224, 224])
+664 clips resulted from sliding window processing.
+torch.Size([664, 3, 16, 224, 224])
+(664, 1024)
+ took 00h00m16s
+(13161, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2020-03-24.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-25.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m55s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-25.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-25.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-25.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-25.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-25.mp4 with 518 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 518, 224, 224])
+127 clips resulted from sliding window processing.
+torch.Size([127, 3, 16, 224, 224])
+(127, 1024)
+ took 00h00m04s
+(12624, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2020-03-25.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-26.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-26.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-26.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-26.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-26.mp4 with 8597 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 8597, 224, 224])
+2147 clips resulted from sliding window processing.
+torch.Size([2147, 3, 16, 224, 224])
+(2147, 1024)
+ took 00h00m49s
+(12144, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2020-03-26.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-04-09.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-04-09.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-04-09.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-04-09.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-04-09.mp4 with 8831 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 8831, 224, 224])
+2205 clips resulted from sliding window processing.
+torch.Size([2205, 3, 16, 224, 224])
+(2205, 1024)
+ took 00h00m51s
+(12202, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2020-04-09.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-04-29.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-04-29.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-04-29.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-04-29.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h01m02s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-04-29.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-04-29.mp4 with 44 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 44, 224, 224])
+8 clips resulted from sliding window processing.
+torch.Size([8, 3, 16, 224, 224])
+(8, 1024)
+ took 00h00m01s
+(12505, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2020-04-29.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-04.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-04.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m59s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-04.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-04.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-04.mp4 with 8626 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 8626, 224, 224])
+2154 clips resulted from sliding window processing.
+torch.Size([2154, 3, 16, 224, 224])
+(2154, 1024)
+ took 00h00m50s
+(12151, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2020-05-04.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-11.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-11.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-11.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-11.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-11.mp4 with 8775 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 8775, 224, 224])
+2191 clips resulted from sliding window processing.
+torch.Size([2191, 3, 16, 224, 224])
+(2191, 1024)
+ took 00h00m50s
+(12188, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2020-05-11.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-18.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-18.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-18.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-18.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-18.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-18.mp4 with 1045 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 1045, 224, 224])
+259 clips resulted from sliding window processing.
+torch.Size([259, 3, 16, 224, 224])
+(259, 1024)
+ took 00h00m07s
+(12756, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2020-05-18.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-27.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-27.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m59s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-27.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-27.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h01m00s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-05-27.mp4 with 6855 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 6855, 224, 224])
+1711 clips resulted from sliding window processing.
+torch.Size([1711, 3, 16, 224, 224])
+(1711, 1024)
+ took 00h00m40s
+(11708, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2020-05-27.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-04.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-04.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-04.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-04.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-04.mp4 with 6726 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 6726, 224, 224])
+1679 clips resulted from sliding window processing.
+torch.Size([1679, 3, 16, 224, 224])
+(1679, 1024)
+ took 00h00m39s
+(11676, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-01-04.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-13.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-13.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-13.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-13.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-13.mp4 with 9016 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 9016, 224, 224])
+2251 clips resulted from sliding window processing.
+torch.Size([2251, 3, 16, 224, 224])
+(2251, 1024)
+ took 00h00m52s
+(12248, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-01-13.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-14.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-14.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m59s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-14.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-14.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h01m01s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-14.mp4 with 9634 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 9634, 224, 224])
+2406 clips resulted from sliding window processing.
+torch.Size([2406, 3, 16, 224, 224])
+(2406, 1024)
+ took 00h01m01s
+(12403, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-01-14.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-25.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-25.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-25.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-25.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-25.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-01-25.mp4 with 193 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 193, 224, 224])
+46 clips resulted from sliding window processing.
+torch.Size([46, 3, 16, 224, 224])
+(46, 1024)
+ took 00h00m02s
+(12543, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-01-25.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-02.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-02.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-02.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-02.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-02.mp4 with 8461 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 8461, 224, 224])
+2113 clips resulted from sliding window processing.
+torch.Size([2113, 3, 16, 224, 224])
+(2113, 1024)
+ took 00h00m49s
+(12110, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-02-02.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-03.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-03.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-03.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-03.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-03.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-03.mp4 with 744 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 744, 224, 224])
+183 clips resulted from sliding window processing.
+torch.Size([183, 3, 16, 224, 224])
+(183, 1024)
+ took 00h00m05s
+(12680, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-02-03.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-04.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-04.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-04.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-04.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h01m01s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-04.mp4 with 8400 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 8400, 224, 224])
+2097 clips resulted from sliding window processing.
+torch.Size([2097, 3, 16, 224, 224])
+(2097, 1024)
+ took 00h00m48s
+(12094, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-02-04.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-05.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-05.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-05.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-05.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-05.mp4 with 7335 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 7335, 224, 224])
+1831 clips resulted from sliding window processing.
+torch.Size([1831, 3, 16, 224, 224])
+(1831, 1024)
+ took 00h00m42s
+(11828, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-02-05.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-17.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-17.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-17.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-17.mp4 with 7327 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 7327, 224, 224])
+1829 clips resulted from sliding window processing.
+torch.Size([1829, 3, 16, 224, 224])
+(1829, 1024)
+ took 00h00m42s
+(9326, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-02-17.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-19.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-19.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-19.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-19.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-19.mp4 with 8306 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 8306, 224, 224])
+2074 clips resulted from sliding window processing.
+torch.Size([2074, 3, 16, 224, 224])
+(2074, 1024)
+ took 00h00m49s
+(12071, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-02-19.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-21.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-21.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-21.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-21.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-21.mp4 with 5013 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 5013, 224, 224])
+1251 clips resulted from sliding window processing.
+torch.Size([1251, 3, 16, 224, 224])
+(1251, 1024)
+ took 00h00m31s
+(11248, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-02-21.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-24.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-24.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-24.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-24.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-24.mp4 with 9385 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 9385, 224, 224])
+2344 clips resulted from sliding window processing.
+torch.Size([2344, 3, 16, 224, 224])
+(2344, 1024)
+ took 00h00m54s
+(12341, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-02-24.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-25.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-25.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-25.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-25.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-25.mp4 with 8284 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 8284, 224, 224])
+2068 clips resulted from sliding window processing.
+torch.Size([2068, 3, 16, 224, 224])
+(2068, 1024)
+ took 00h00m48s
+(12065, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-02-25.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-26.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-26.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-26.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-26.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h01m02s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-02-26.mp4 with 6686 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 6686, 224, 224])
+1669 clips resulted from sliding window processing.
+torch.Size([1669, 3, 16, 224, 224])
+(1669, 1024)
+ took 00h00m39s
+(11666, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-02-26.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-08.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-08.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-08.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-08.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-08.mp4 with 9559 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 9559, 224, 224])
+2387 clips resulted from sliding window processing.
+torch.Size([2387, 3, 16, 224, 224])
+(2387, 1024)
+ took 00h00m55s
+(12384, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-03-08.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-12.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-12.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m58s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-12.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-12.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-12.mp4 with 5441 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 5441, 224, 224])
+1358 clips resulted from sliding window processing.
+torch.Size([1358, 3, 16, 224, 224])
+(1358, 1024)
+ took 00h00m32s
+(11355, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-03-12.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-16.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-16.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-16.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-16.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-16.mp4 with 7899 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 7899, 224, 224])
+1972 clips resulted from sliding window processing.
+torch.Size([1972, 3, 16, 224, 224])
+(1972, 1024)
+ took 00h00m45s
+(11969, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-03-16.npy
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-17.mp4 with 10000 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10000, 224, 224])
+2497 clips resulted from sliding window processing.
+torch.Size([2497, 3, 16, 224, 224])
+(2497, 1024)
+ took 00h00m56s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-17.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-17.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-17.mp4 with 10012 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 10012, 224, 224])
+2500 clips resulted from sliding window processing.
+torch.Size([2500, 3, 16, 224, 224])
+(2500, 1024)
+ took 00h00m57s
+Loaded video /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2021-03-17.mp4 with 9913 frames [288hx256w] res. at 25
+Working on chunk...torch.Size([3, 9913, 224, 224])
+2476 clips resulted from sliding window processing.
+torch.Size([2476, 3, 16, 224, 224])
+(2476, 1024)
+ took 00h00m57s
+(12473, 1024)
+save /net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/srf.2021-03-17.npy

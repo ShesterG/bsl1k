@@ -30,7 +30,7 @@ from utils.transforms import color_normalize
 
 
 @beartype
-def load_rgb_video(video_path: str, fps: int) -> torch.Tensor:
+def load_rgb_video(video_path: str, fps: int, lookback: int, chunk_size: int = 10000):
     """
     Load frames of a video using cv2 (fetch from provided URL if file is not found
     at given location).
@@ -39,9 +39,7 @@ def load_rgb_video(video_path: str, fps: int) -> torch.Tensor:
     cap = cv2.VideoCapture(str(video_path))
     cap_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     cap_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-    cap_fps = cap.get(cv2.CAP_PROP_FPS)
-
-    print('loaded by cv2 ...')
+    cap_fps = round(cap.get(cv2.CAP_PROP_FPS))
 
     # cv2 won't be able to change frame rates for all encodings, so we use ffmpeg
     if cap_fps != fps:
@@ -61,24 +59,33 @@ def load_rgb_video(video_path: str, fps: int) -> torch.Tensor:
     f = 0
     rgb = []
     while True:
-        if f == 25000:
-            break
         # frame: BGR, (h, w, 3), dtype=uint8 0..255
         ret, frame = cap.read()
         if not ret:
+            # (nframes, 3, cap_height, cap_width) => (3, nframes, cap_height, cap_width)
+            rgb_out = torch.stack(rgb).permute(1, 0, 2, 3)
+            print(f"Loaded video {video_path} with {rgb_out.shape[1]} frames [{cap_height}hx{cap_width}w] res. "
+                f"at {cap_fps}")
+            yield rgb_out
             break
+
         # BGR (OpenCV) to RGB (Torch)
         frame = frame[:, :, [2, 1, 0]]
         rgb_t = im_to_torch(frame)
         rgb.append(rgb_t)
-        f += 1
-    cap.release()
-    # (nframes, 3, cap_height, cap_width) => (3, nframes, cap_height, cap_width)
-    rgb = torch.stack(rgb).permute(1, 0, 2, 3)
-    print(f"Loaded video {video_path} with {f} frames [{cap_height}hx{cap_width}w] res. "
-          f"at {cap_fps}")
-    return rgb_chunks
 
+        if f == chunk_size - 1:
+            # (nframes, 3, cap_height, cap_width) => (3, nframes, cap_height, cap_width)
+            rgb_out = torch.stack(rgb).permute(1, 0, 2, 3)
+            print(f"Loaded video {video_path} with {rgb_out.shape[1]} frames [{cap_height}hx{cap_width}w] res. "
+                f"at {cap_fps}")
+            f = 0
+            rgb = rgb[-lookback:]
+            yield rgb_out
+        else:
+            f += 1
+            
+    cap.release()
 
 @beartype
 def prepare_input(
@@ -196,7 +203,7 @@ def sliding_windows(
 
 model = None
 def get_video_feature(
-    video_path: str = 'sample_data/inputs/srf.2020-03-13_trim_10s.mp4',
+    video_path: str = '/net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-13_trim_2m.mp4',
     checkpoint_path: str = '../data/bsl5k.pth.tar',
     checkpoint_url: str = 'https://www.robots.ox.ac.uk/~vgg/research/bslattend/data/bsl5k.pth.tar',
     fps: int = 25,
@@ -214,48 +221,52 @@ def get_video_feature(
                 num_classes=num_classes,
                 num_in_frames=num_in_frames,
             )
-    with BlockTimer("Loading video frames"):
-        rgb_orig = load_rgb_video(
-            video_path=video_path,
-            fps=fps,
-        )
-    # Prepare: resize/crop/normalize
-    rgb_input = prepare_input(rgb_orig)
-    print(rgb_input.size())
-    # Sliding window
-    rgb_slides, t_mid = sliding_windows(
-        rgb=rgb_input,
-        stride=stride,
-        num_in_frames=num_in_frames,
+
+    rgb_orig_gen = load_rgb_video(
+        video_path=video_path,
+        fps=fps,
+        lookback=(num_in_frames-stride),
     )
-    print(rgb_slides.shape)
-    print(t_mid.shape)
-    # Number of windows/clips
-    num_clips = rgb_slides.shape[0]
-    # Group the clips into batches
-    num_batches = math.ceil(num_clips / batch_size)
-    raw_scores = np.empty((0, num_classes), dtype=float)
-    features = []
-    for b in range(num_batches):
-        inp = rgb_slides[b * batch_size : (b + 1) * batch_size]
-        # Forward pass
-        out = model(inp)
-        print(out['embds'].size())
-        features.append(out['embds'].squeeze().cpu().detach().numpy())
-    feature = np.concatenate(features*2)
+    feature_l = []
+    for rgb_orig in rgb_orig_gen:
+        with BlockTimer("Working on chunk"):
+            # Prepare: resize/crop/normalize
+            rgb_input = prepare_input(rgb_orig)
+            print(rgb_input.size())
+            # Sliding window
+            rgb_slides, t_mid = sliding_windows(
+                rgb=rgb_input,
+                stride=stride,
+                num_in_frames=num_in_frames,
+            )
+            print(rgb_slides.shape)
+            # Number of windows/clips
+            num_clips = rgb_slides.shape[0]
+            # Group the clips into batches
+            num_batches = math.ceil(num_clips / batch_size)
+            raw_scores = np.empty((0, num_classes), dtype=float)
+            features = []
+            for b in range(num_batches):
+                inp = rgb_slides[b * batch_size : (b + 1) * batch_size]
+                # Forward pass
+                out = model(inp)
+                features.append(out['embds'].view(-1, out['embds'].shape[1]).cpu().detach().numpy())
+            feature = np.concatenate(features)
+            feature_l.append(feature)
+            print(feature.shape)
+    feature = np.concatenate(feature_l)
     print(feature.shape)
 
     return feature
 
 if __name__ == "__main__":
-    VIDEO_PATH_SRF = '/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/'
-    FEATURE_PATH_SRF = '/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/'
-    CSV_URL = '/home/zifjia/processing-shared-task-data/alignment_offset/SRF_segmented_Surrey.csv'
+    VIDEO_PATH_SRF = '/net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/'
+    FEATURE_PATH_SRF = '/net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/'
+    CSV_URL = '/net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/processing-shared-task-data-zifan/alignment_offset/SRF_segmented_Surrey.csv'
 
     Path(FEATURE_PATH_SRF).mkdir(exist_ok=True, parents=True)
 
     data = pd.read_csv(CSV_URL)
-    print(data)
 
     data = data.dropna()
     gb = data.groupby('filename')
@@ -265,8 +276,6 @@ if __name__ == "__main__":
 
     for data_current in data_by_video:
 
-        print(data_current)
-
         filename = data_current['filename'].iloc[0]
         video_path = (VIDEO_PATH_SRF + filename).replace('.srt', '.mp4')
         feature_path = (FEATURE_PATH_SRF + filename).replace('.srt', '.npy')
@@ -274,3 +283,4 @@ if __name__ == "__main__":
         feature = get_video_feature(video_path)
         # feature = get_video_feature()
         np.save(feature_path, feature)
+        print('save ' + feature_path)

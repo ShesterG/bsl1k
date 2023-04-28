@@ -8,6 +8,7 @@ import os
 import sys
 import math
 import pickle as pkl
+import gzip
 import shutil
 import argparse
 from pathlib import Path
@@ -18,6 +19,7 @@ import numpy as np
 import pandas as pd
 import torch
 import scipy.special
+from pathlib import Path
 from beartype import beartype
 from zsvision.zs_utils import BlockTimer
 from tqdm import tqdm
@@ -28,64 +30,57 @@ from utils.misc import to_torch
 from utils.imutils import im_to_numpy, im_to_torch, resize_generic
 from utils.transforms import color_normalize
 
+last_path = None
+cap = None
+cap_height = None
+cap_width = None
+cap_fps = None
 
 @beartype
-def load_rgb_video(video_path: str, fps: int, lookback: int, chunk_size: int = 10000):
+def load_rgb_video(start, end, video_path: str, fps: int, lookback: int, chunk_size: int = 10000):
     """
     Load frames of a video using cv2 (fetch from provided URL if file is not found
     at given location).
     """
-    # fetch_from_url(url=video_url, dest_path=video_path)
-    cap = cv2.VideoCapture(str(video_path))
-    cap_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-    cap_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-    cap_fps = round(cap.get(cv2.CAP_PROP_FPS))
+    
+    global last_path, cap, cap_width, cap_height, cap_fps
+    if video_path != last_path:
+      cap = cv2.VideoCapture(str(video_path))
+      cap_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+      cap_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+      cap_fps = cap.get(cv2.CAP_PROP_FPS)
+    last_path = video_path
 
-    # cv2 won't be able to change frame rates for all encodings, so we use ffmpeg
-    if cap_fps != fps:
-        tmp_video_path = f"{video_path}.tmp.{video_path.suffix}"
-        shutil.move(video_path, tmp_video_path)
-        cmd = (f"ffmpeg -i {tmp_video_path} -pix_fmt yuv420p "
-               f"-filter:v fps=fps={fps} {video_path}")
-        print(f"Generating new copy of video with frame rate {fps}")
-        os.system(cmd)
-        Path(tmp_video_path).unlink()
-        cap = cv2.VideoCapture(str(video_path))
-        cap_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-        cap_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
-        cap_fps = cap.get(cv2.CAP_PROP_FPS)
-        assert cap_fps == fps, f"ffmpeg failed to produce a video at {fps}"
+    rgb = []    
+    start_framenum = int(start * cap_fps)
+    end_framenum = int(end * cap_fps)
+    number_of_frames = int((end - start) * cap_fps)
+    frame_count = 0
+    
+    # Set the start time
+    start_time = int(start*1000)
+    cap.set(cv2.CAP_PROP_POS_MSEC, start_time)
 
-    f = 0
-    rgb = []
-    while True:
-        # frame: BGR, (h, w, 3), dtype=uint8 0..255
+    # Read frames until the end time is reached
+    #keep = True
+    
+
+    for fra in range(number_of_frames): 
         ret, frame = cap.read()
         if not ret:
-            # (nframes, 3, cap_height, cap_width) => (3, nframes, cap_height, cap_width)
-            rgb_out = torch.stack(rgb).permute(1, 0, 2, 3)
-            print(f"Loaded video {video_path} with {rgb_out.shape[1]} frames [{cap_height}hx{cap_width}w] res. "
-                f"at {cap_fps}")
-            yield rgb_out
-            break
+            continue
 
         # BGR (OpenCV) to RGB (Torch)
         frame = frame[:, :, [2, 1, 0]]
         rgb_t = im_to_torch(frame)
         rgb.append(rgb_t)
+                
+    # (nframes, 3, cap_height, cap_width) => (3, nframes, cap_height, cap_width)
+    rgb_out = torch.stack(rgb).permute(1, 0, 2, 3)
+    print(f"Loaded video {video_path} with {rgb_out.shape[1]} frames [{cap_height}hx{cap_width}w] res. "
+        f"at {cap_fps}")
+    yield rgb_out
 
-        if f == chunk_size - 1:
-            # (nframes, 3, cap_height, cap_width) => (3, nframes, cap_height, cap_width)
-            rgb_out = torch.stack(rgb).permute(1, 0, 2, 3)
-            print(f"Loaded video {video_path} with {rgb_out.shape[1]} frames [{cap_height}hx{cap_width}w] res. "
-                f"at {cap_fps}")
-            f = 0
-            rgb = rgb[-lookback:]
-            yield rgb_out
-        else:
-            f += 1
-            
-    cap.release()
 
 @beartype
 def prepare_input(
@@ -203,14 +198,16 @@ def sliding_windows(
 
 model = None
 def get_video_feature(
+    start,
+    end,
     video_path: str = '/net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/srf.2020-03-13_trim_2m.mp4',
-    checkpoint_path: str = '../data/bsl5k.pth.tar',
+    checkpoint_path: str = '/content/gbucketafrisign/I3DFT/models/bsl5k.pth.tar',
     checkpoint_url: str = 'https://www.robots.ox.ac.uk/~vgg/research/bslattend/data/bsl5k.pth.tar',
-    fps: int = 25,
+    fps: int = 30,
     num_classes: int = 5383,
-    num_in_frames: int = 16,
-    batch_size: int = 16,
-    stride: int = 4,
+    num_in_frames: int = 64,
+    batch_size: int = 8,
+    stride: int = 8,
 ):
     global model
     if model is None:
@@ -223,6 +220,8 @@ def get_video_feature(
             )
 
     rgb_orig_gen = load_rgb_video(
+        start=start,
+        end=end,      
         video_path=video_path,
         fps=fps,
         lookback=(num_in_frames-stride),
@@ -260,27 +259,38 @@ def get_video_feature(
     return feature
 
 if __name__ == "__main__":
-    VIDEO_PATH_SRF = '/net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_256/'
-    FEATURE_PATH_SRF = '/net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/srf/parallel/videos_i3d/'
-    CSV_URL = '/net/cephfs/shares/easier.volk.cl.uzh/WMT_Shared_Task/processing-shared-task-data-zifan/alignment_offset/SRF_segmented_Surrey.csv'
+    
+    #ONLY EDIT THIS  
+    bucket = '/content/gbucketafrisign/'
+    model_feature_path = '/content/gbucketafrisign/I3Dfeatures/bsl5k/' 
+    checkpoint_path = bucket+'I3DFT/models/bsl5k.pth.tar'
+    index_path='/content/gbucketafrisign/JWSign/JWSign_lcv.dict'
+    
+    with gzip.open(index_path, "rb") as f:
+        index = pkl.load(f)
+    shester = 0
 
-    Path(FEATURE_PATH_SRF).mkdir(exist_ok=True, parents=True)
-
-    data = pd.read_csv(CSV_URL)
-
-    data = data.dropna()
-    gb = data.groupby('filename')
-    data_by_video = [gb.get_group(x) for x in gb.groups]
-
-    video_embeddings = []
-
-    for data_current in data_by_video:
-
-        filename = data_current['filename'].iloc[0]
-        video_path = (VIDEO_PATH_SRF + filename).replace('.srt', '.mp4')
-        feature_path = (FEATURE_PATH_SRF + filename).replace('.srt', '.npy')
-
-        feature = get_video_feature(video_path)
-        # feature = get_video_feature()
-        np.save(feature_path, feature)
-        print('save ' + feature_path)
+    language_to_test = ['ASL']
+    #for la in index:
+    for la in language_to_test:
+      for vid in index[la]:
+        video_path = bucket+'videos/'+la+'/'+vid+'.mp4'
+        #cap = cv2.VideoCapture(video_path)
+        for ver in index[la][vid]:
+          feature_path = model_feature_path + la + '/'
+          ver_dict = index[la][vid][ver] 
+          feature_path_v = feature_path + ver_dict['verse_unique'] + ".npy"
+          """
+          if Path(feature_path_v).exists():
+            print(f"verse exist") 
+            continue
+          """  
+          print(f"new verse started")        
+          start = float(ver_dict['verse_start'])
+          end = float(ver_dict['verse_end'])
+          feature = get_video_feature(start=start,end=end, video_path=video_path)          
+          Path(feature_path).mkdir(exist_ok=True, parents=True)         
+          np.save(feature_path_v, feature)
+          shester = shester + 1
+          print(f"verse {shester} done.")
+        #cap.release()  
